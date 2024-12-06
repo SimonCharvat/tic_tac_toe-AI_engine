@@ -1,3 +1,30 @@
+# Tic-Tac-Toe AI Engine Framework (Fork)
+
+This repository is a fork of the original [Tic-Tac-Toe AI Framework](https://github.com/karelsafr/piskvorky) project by Karel Šafr. The majority of the code in this repository was created by him, including the framework for training and comparing AI engines to play Tic-Tac-Toe on a 5x5 grid.
+
+## About This Fork
+
+The primary addition in this fork is a custom AI engine named **Dense2LayerWithSums**, developed by me, Šimon Charvát. This includes:
+- **Engine Code**: A Python script implementing the `Dense2LayerWithSums` model.
+- **Trained Model Weights**: Stored in `Dense2LayerWithSums.npz` file.
+
+The rest of the repository, including the training framework and other engines, remains unchanged from the original work by Karel Šafr.
+
+## Dense2LayerWithSums
+- Designed for Tic-Tac-Toe on a 5x5 grid.
+- Features a dense neural network with two layers (32 and 16 neurons).
+- As input takes the playing board and sums for each row/column. 
+- Better performance than simple linear regression model, but far from perfect.
+
+## Credits
+- **Original Framework**: [Karel Šafr](https://github.com/karelsafr/piskvorky)
+- **Dense2LayerWithSums Engine**: Šimon Charvát
+
+For details on the original project and its broader features, please visit the original repository.
+
+
+
+
 # Tic Tac Toe AI Engine Development Framework
 # Dependencies:
 - numpy
