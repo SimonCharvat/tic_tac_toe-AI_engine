@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.stats import entropy
 
-class tym_harmonie:
+class Dense2LayerWithSums:
     def __init__(self):
         self.v_engine = "0.0.3"
         self.board = None

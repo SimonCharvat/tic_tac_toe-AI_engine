@@ -2,11 +2,12 @@ import numpy as np
 import pygame
 from GameBoard import GameBoard
 from Player import Player
-from EngineLinear import EngineLinear
-from EngineConvo import EngineConvo
-from EngineAI import EngineAI
 import time
 from colors import *
+
+# AI engines imports
+from EngineLinear import EngineLinear
+from Dense2LayerWithSums import Dense2LayerWithSums
 
 
 class EngineComparison:
@@ -165,8 +166,8 @@ if __name__ == "__main__":
     comparison = EngineComparison(
         engine1_class=EngineLinear,
         engine1_datafile="./temp_engines/LinEngine1.npz",
-        engine2_class=EngineConvo,
-        engine2_datafile="./temp_engines/ConvEngine1.npz",
+        engine2_class=Dense2LayerWithSums,
+        engine2_datafile="./temp_engines/Dense2LayerWithSums.npz",
         num_games=20,
         display_game=True,
         delay=0.01  # second delay between moves
